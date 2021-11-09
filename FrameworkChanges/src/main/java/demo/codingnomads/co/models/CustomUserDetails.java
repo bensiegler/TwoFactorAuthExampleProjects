@@ -77,6 +77,8 @@ public class CustomUserDetails implements UserDetails {
         HashMap<Integer, TwoFactorPreference> preferences = new HashMap<>();
         TwoFactorPreference preference = new TwoFactorPreference(true, "VDYNVO3U5QGJ26KGEYIEOQ2J7AX5PF6T");
         preferences.put(1, preference);
+        TwoFactorPreference preference1 = new TwoFactorPreference(false, "bensiegler@icloud.com");
+        preferences.put(2, preference1);
         return preferences;
     }
 }
