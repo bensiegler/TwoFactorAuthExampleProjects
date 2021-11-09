@@ -18,11 +18,11 @@ public class AwsEmailSendStrategy implements TwoFactorAuthCodeSendStrategy {
 	private final String port = "587";
 	private final boolean smtpTLS = true;
 	private final boolean smtpAuth = true;
-	private final String sendFromAddress = "bensiegler@bensiegler.com";
+	private final String sendFromAddress =;
 	private final String sendFromName = "Ben Siegler";
 	private final String host = "email-smtp.eu-west-1.amazonaws.com";
-	private final String username = "AKIATRZNSEXPDCOYGMFK";
-	private final String password = "BAVZYEYZgtORmWLqYr4q36qGZsckb5BjwfeHlXyd+aJB";
+	private final String username;
+	private final String password = "";
 
 	public AwsEmailSendStrategy() {
 		Properties props = System.getProperties();
